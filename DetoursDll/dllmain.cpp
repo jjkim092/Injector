@@ -1,12 +1,12 @@
 ﻿// dllmain.cpp : DLL 애플리케이션의 진입점을 정의합니다.
 #include "pch.h"
 #include <Windows.h>
-#include "detours.h"
+#include "..\third_party\detours\include\detours.h"
 #include <stdio.h>
 #include <wchar.h>
 #include <atlbase.h>
 
-#define LOGPATH "C:\\test\\info.txt"
+#define LOGPATH "info.txt"
 
 //int (WINAPI *myMsgBox)(HWND hwnd, LPCTSTR lpText, LPCTSTR lpCaption, UINT uType) = MessageBox;
 //int WINAPI hookMsgBox(HWND hwnd, LPCTSTR lpText, LPCTSTR lpCaption, UINT uType)
