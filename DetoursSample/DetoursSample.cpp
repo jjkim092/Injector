@@ -3,18 +3,18 @@
 
 #include <stdio.h>
 #include <Windows.h>
-#include "detours.h"
+#include "..\third_party\detours\include\detours.h"
 
 void targetFunction()
 {
-    printf("타겟 함수");
+    printf("Target Function");
 }
 
 void (*mytargetFunction)() = targetFunction;
 
 void hookingFunction()
 {
-    printf("함수 가로채기");
+    printf("Hook Function");
 }
 
 void AttachDetours(void)
